@@ -1,0 +1,57 @@
+%YAML 1.3
+---
+- Process: firefox
+- Rule:
+  - Key: [Smart Shift, Back Button]
+  - KeyPress:
+    - [Alt_L, Left]
+    - click
+- Rule:
+  - MouseGesture: [Smart Shift, Mouse Left]
+  - KeyPress:
+    - [Control_L, Page_Up]
+    - click
+- Rule:
+  - MouseGesture: [Smart Shift, Mouse Right]
+  - KeyPress:
+    - [Control_L, Page_Down]
+    - click
+- Rule:
+  - MouseGesture: [Smart Shift, Mouse Up]
+  - KeyPress:
+    - F6
+    - click
+- Rule:
+  - MouseGesture: Smart Shift
+  - KeyPress:
+    - [Control_L, w]
+    - click
+- Rule:
+  - MouseGesture: Mouse Gesture Button
+  - KeyPress:
+    - [Control_L, t]
+    - click
+...
+---
+- Rule:
+  - Key: [Forward Button, pressed]
+  - KeyPress:
+    - [Control_L, v]
+    - click
+- Rule:
+  - Key: [Back Button, pressed]
+  - KeyPress:
+    - [Control_L, c]
+    - click
+- Rule:
+  - MouseGesture: [Mouse Gesture Button, Mouse Up]
+  - KeyPress:
+    - [Super_L, t]
+    - click
+- Rule:
+  - MouseGesture: Mouse Down
+  - Execute: [notify-send, down]
+- Rule:
+  - MouseGesture: [Smart Shift, Mouse Up]
+  - Execute: [notify-send, press]
+...
